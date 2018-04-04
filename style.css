@@ -1,6 +1,8 @@
 /* GLOBAL STYLES */
 body{
 	font-family:'Work Sans', sans-serif;
+	font-size:100%;
+	line-height:1.125em; /* 16x1.125=18px */
 	color:#333;
 	text-align: left;
 	background-color:#f5f5f5; /* fafafa */
@@ -9,6 +11,7 @@ body{
 p{
 	margin:5px 0;
 	line-height: 1.6em;
+	
 }
 
 a{
@@ -23,7 +26,6 @@ strong{
 
 nav{
 	text-align:left;
-	
 }
 
 figcaption
@@ -31,6 +33,47 @@ figcaption
 line-height: 25px;
 font-size:14px;
 width:200px;
+}
+
+nav{
+	position: fixed;
+}
+
+/*TITLE STYLE*/
+.title{
+	font-size: 5em;
+	font-family: "Work Sans", sans-serif;
+	font-weight: bold;
+	line-height: 1.15em;
+}
+
+/*CSS GRID */
+.grid-container {
+	display: grid;
+	grid-template-columns: 20% auto auto;  /*3 columns*/
+	grid-template-rows: auto auto auto; /*3 rows*/
+	justify-items: center;
+	align-items: center;
+}
+
+.item5{
+	grid-column-start:2;
+	grid-column-end: span 2;
+	grid-row-start:2;
+	grid-row-end: span 2;
+}
+
+.item15{
+	grid-column-start:2;
+	grid-row-start:2;
+	justify-self:start;
+	align-self:start;
+}
+.item19{
+	grid-column-start:2;
+	grid-row-start:2;
+	justify-self:end;
+	align-self:end;
 }
 
 /* SECTION STYLES */
