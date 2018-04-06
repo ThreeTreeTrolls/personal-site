@@ -1,6 +1,6 @@
 /* GLOBAL STYLES */
 body{
-	font-family:'Work Sans', sans-serif;
+	font-family:'Work Sans';, sans-serif;
 	font-size:100%;
 	line-height:1.125em; /* 16x1.125=18px */
 	color:#333;
@@ -26,6 +26,7 @@ strong{
 
 nav{
 	text-align:left;
+	position:fixed;
 }
 
 figcaption
@@ -35,22 +36,58 @@ font-size:14px;
 width:200px;
 }
 
-nav{
-	position: fixed;
+
+.body-style{
+	font-family: "Work Sans";, sans-serif;
+	font-size: 1.25em;
+	line-height:1.3em;
+	
+}
+
+#contact-style{
+	line-height:1.5em;
+}
+.work-sans{
+	font-family: "Work Sans";,sans-serif;
 }
 
 /*TITLE STYLE*/
 .title{
 	font-size: 5em;
-	font-family: "Work Sans", sans-serif;
+	font-family: "Work Sans";, sans-serif;
 	font-weight: bold;
 	line-height: 1.15em;
+}
+
+.title2{
+	font-size: 6em;
+	font-family: "Work Sans";, sans-serif;
+	font-weight: bold;
+}
+.title3{
+	font-size: 1.25em;
+	font-family: "Work Sans";, sans-serif;
+	font-weight: bold;
+	line-height: 2.15em;
+}
+
+.title4{
+	font-size: 1.25em;
+	font-family: "Work Sans";, sans-serif;
 }
 
 /*CSS GRID */
 .grid-container {
 	display: grid;
 	grid-template-columns: 20% auto auto;  /*3 columns*/
+	grid-template-rows: auto auto auto; /*3 rows*/
+	justify-items: center;
+	align-items: center;
+}
+
+.grid-container1 {
+	display: grid;
+	grid-template-columns: 30% 50% auto;  /*3 columns*/
 	grid-template-rows: auto auto auto; /*3 rows*/
 	justify-items: center;
 	align-items: center;
@@ -74,6 +111,21 @@ nav{
 	grid-row-start:2;
 	justify-self:end;
 	align-self:end;
+}
+
+.item28{
+	grid-column-start:2;
+	grid-row-start:1;
+	align-self:end;
+}
+
+.item35{
+	justify-self:end;
+}
+
+.item37{
+	justify-self:end;
+	align-self:center;
 }
 
 /* SECTION STYLES */
@@ -103,6 +155,10 @@ nav ul li a{
 }
 
 nav ul li a:hover{
+	text-decoration:underline;
+}
+
+a:hover{
 	text-decoration:underline;
 }
 

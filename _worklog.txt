@@ -4,3 +4,4 @@ WORK LOG - log of the work that gets done when I work on the project
 28/03/2018 - Added science/tech html files, figured out section to 100% viewport, did some styling for header and footer section (~1hr)
 04/03/2018 - Added cv html file and populated with text (~30 mins)
 04/04/2018 - Started css grid (~30 mins)
+04/06=2018 - Finished up css for home page (1hr)
